@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+}
+.countItem{
+    position: relative;
+    bottom: 10px;
+}
+.bi-cart4{
+    color:yellowgreen;
+    cursor: pointer;
+}
+.wied{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.likeBox{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.likeBox .fa-star{
+    color: gold;
+    cursor: pointer;
+}
+.wied .btn{
+    outline: none;
+    font-weight: 500;
+}
+.sumBox{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+   position: relative;
+   bottom: 10px;
+   justify-content: flex-end;
+}
+.sumBox .kurs{
+    font-size: 20px;
+    color: gold;
+    font-weight: 700;
+}
+.sumBox .summa{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 5px;
+}
+.h2{
+    font-size: 20px;
+    color: gold;
+}
+.card:hover{
+box-shadow: 0 0 15px rgba(82, 78, 78, 0.363);
+cursor: pointer;
+}
+.removeBox{
+   color: white;
+   width: 80px;
+   text-align: center;
+   border-radius: 30px;
+    background-color: orangered;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.removeBox:active{
+    background-color: rgb(224, 62, 3);
+}
+.cartShop{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 380px;
+    min-height: 100vh;
+    box-shadow: 0 0 14px rgba(83, 80, 80, 0.342);
+    z-index: 999;
+    background-color: white;
+    padding: 10px;
+    padding-top: 70px;
+    transition: 0.6s;
+}
+.cartShop.active{
+    right: 0;
+}
+.cart-content{
+    width: 100%;  
+}
+.cartTitle{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+.containerBox{
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card-text{
+    font-size: 15px;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 20px;
+}
+.card-body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.card > img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    margin: auto;
+}
+.cart-box{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    background-color: rgba(236, 236, 236, 0.363);
+    padding-right: 10px;
+}
+.shop-img{
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    padding: 5px;
+}
+.detail-box{
+    display: grid;
+    row-gap: 0.1rem;
+    position: relative;
+    right: 30px;
+    box-sizing: border-box;
+}
+.cart-product-title{
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.cart-price{
+    font-size: 20px;
+    font-weight: 700;
+    color: gold;
+}
+.cart-quantity{
+    width: 50px;
+    outline-color: silver;
+    text-align: center;
+    font-size: 15px;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    border-top: 1px solid black;
+}
+.total-title{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.total-price{
+    margin-left: 0.5rem;
+}
+.btn-buy{
+    width: 150px;
+    height: 40px;
+    display: flex;
+    margin:  0 auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: orangered;
+    color: white;
+    font-weight: 600;
+}
+.btn-buy:active{
+    background-color: rgb(224, 62, 3);
+}
+#closeCart{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 4.5rem;
+    right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+}
+#closeCart:hover{
+    animation: close 2s linear infinite;
+}
+@keyframes close{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: rgba(221, 231, 231, 0.356);
+    padding-left: 20px;
+    
+}
+::-webkit-scrollbar-thumb{
+    background-color: silver;
+    width: 10px;
+    border-radius: 20px;
+}
